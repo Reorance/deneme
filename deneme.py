@@ -1168,7 +1168,7 @@ def CheckForUpdate():
 	global NewestVersion
 	if NewestVersion == 0:
 		try:
-			req = urllib.request.Request('https://raw.githubusercontent.com/hakankahya48/EklentiTRSRO/main/deneme.py', headers={'User-Agent': 'Mozilla/5.0'})
+			req = urllib.request.Request('https://github.com/Reorance/deneme/blob/main/deneme.py', headers={'User-Agent': 'Mozilla/5.0'})
 			with urllib.request.urlopen(req) as f:
 				lines = str(f.read().decode("utf-8")).split()
 				for num, line in enumerate(lines):
@@ -1187,7 +1187,7 @@ def button_update():
 	if os.path.exists(path + "Plugins/" + "deneme.py"):
 		try:
 			os.rename(path + "Plugins/" + "deneme.py", path + "Plugins/" + "denemeBACKUP.py")
-			req = urllib.request.Request('https://raw.githubusercontent.com/hakankahya48/EklentiTRSRO/main/deneme.py', headers={'User-Agent': 'Mozilla/5.0'})
+			req = urllib.request.Request('https://github.com/Reorance/deneme/blob/main/deneme.py', headers={'User-Agent': 'Mozilla/5.0'})
 			with urllib.request.urlopen(req) as f:
 				lines = str(f.read().decode("utf-8"))
 				with open(path + "Plugins/" + "deneme.py", "w+") as f:
