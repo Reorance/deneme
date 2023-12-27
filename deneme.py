@@ -1,5 +1,3 @@
-
-text/x-generic deneme.py ( Python script, UTF-8 Unicode text executable, with very long lines )
 from phBot import *
 from threading import Timer
 import phBotChat
