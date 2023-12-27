@@ -10,7 +10,7 @@ import sqlite3
 import urllib.request
 
 name = 'deneme'
-version = 1
+version = 2.5
 NewestVersion = 0
 
 gui = QtBind.init(__name__, name)
